@@ -885,7 +885,7 @@ puts hand.evaluate == 'High card'
 #   end
 
 #   def []=(idx, value)
-#     self[idx]
+#     self[idx] # To raise an error if the index doesn't exist
 #     array[idx] = value
 #   end
 
@@ -894,7 +894,7 @@ puts hand.evaluate == 'High card'
 #   end
 
 #   def to_a
-#     array
+#     array.clone # To prevent a user being able to mutate the original object
 #   end
 # end
 
